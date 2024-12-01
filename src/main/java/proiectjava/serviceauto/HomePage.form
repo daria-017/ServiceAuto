@@ -48,11 +48,8 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" attributes="0">
                   <EmptySpace max="-2" attributes="0"/>
-                  <Group type="103" groupAlignment="0" attributes="0">
-                      <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
-                      <Component id="welcomeBack" min="-2" pref="129" max="-2" attributes="0"/>
-                  </Group>
-                  <EmptySpace max="32767" attributes="0"/>
+                  <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
+                  <EmptySpace pref="837" max="32767" attributes="0"/>
                   <Component id="logoutButton" min="-2" pref="98" max="-2" attributes="0"/>
                   <EmptySpace min="-2" pref="23" max="-2" attributes="0"/>
               </Group>
@@ -69,8 +66,7 @@
               <Group type="102" attributes="0">
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" attributes="0">
-                          <Component id="welcomeBack" min="-2" max="-2" attributes="0"/>
-                          <EmptySpace max="-2" attributes="0"/>
+                          <EmptySpace min="-2" pref="46" max="-2" attributes="0"/>
                           <Component id="jLabel1" min="-2" max="-2" attributes="0"/>
                       </Group>
                       <Group type="102" alignment="0" attributes="0">
@@ -88,14 +84,6 @@
         </DimensionLayout>
       </Layout>
       <SubComponents>
-        <Component class="java.awt.Label" name="welcomeBack">
-          <Properties>
-            <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-              <Font name="Dialog" size="24" style="1"/>
-            </Property>
-            <Property name="text" type="java.lang.String" value="Bun venit!"/>
-          </Properties>
-        </Component>
         <Component class="javax.swing.JButton" name="logoutButton">
           <Properties>
             <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
@@ -263,41 +251,46 @@
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
-                                      </Group>
-                                      <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
-                                      <Group type="103" groupAlignment="0" attributes="0">
-                                          <Component id="seriaMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="categoriePermisMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="caroserieMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="stareMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="anFabricatieMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="marcaMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="modelMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="capacitateCilindricaMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                          <Component id="pretMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
-                                      </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                                       <Component id="Titlu1" min="-2" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="107" max="-2" attributes="0"/>
-                                      <Component id="butonSalvareMasina" min="-2" max="-2" attributes="0"/>
+                                      <EmptySpace max="-2" attributes="0"/>
+                                      <Group type="103" groupAlignment="0" attributes="0">
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="jLabel12" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel17" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel18" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel19" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel20" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel21" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel22" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel23" alignment="0" min="-2" max="-2" attributes="0"/>
+                                                  <Component id="jLabel24" alignment="0" min="-2" max="-2" attributes="0"/>
+                                              </Group>
+                                              <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
+                                              <Group type="103" groupAlignment="0" attributes="0">
+                                                  <Component id="seriaMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="categoriePermisMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="caroserieMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="stareMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="anFabricatieMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="marcaMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="modelMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="capacitateCilindricaMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                                  <Component id="pretMasina" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
+                                              </Group>
+                                          </Group>
+                                          <Group type="102" alignment="0" attributes="0">
+                                              <Component id="butonSalvareMasina" min="-2" max="-2" attributes="0"/>
+                                              <EmptySpace type="separate" max="-2" attributes="0"/>
+                                              <Component id="butonStergeRandMasina" min="-2" pref="201" max="-2" attributes="0"/>
+                                          </Group>
+                                      </Group>
                                   </Group>
                               </Group>
-                              <EmptySpace pref="35" max="32767" attributes="0"/>
+                              <EmptySpace pref="23" max="32767" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -356,7 +349,10 @@
                                   <Component id="seriaMasina" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
                               <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="butonSalvareMasina" min="-2" max="-2" attributes="0"/>
+                              <Group type="103" groupAlignment="3" attributes="0">
+                                  <Component id="butonSalvareMasina" alignment="3" min="-2" max="-2" attributes="0"/>
+                                  <Component id="butonStergeRandMasina" alignment="3" min="-2" max="-2" attributes="0"/>
+                              </Group>
                               <EmptySpace min="-2" pref="28" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -610,6 +606,24 @@
                         <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butonSalvareMasinaActionPerformed"/>
                       </Events>
                     </Component>
+                    <Component class="javax.swing.JButton" name="butonStergeRandMasina">
+                      <Properties>
+                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="0" green="0" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
+                          <Font name="Times New Roman" size="18" style="0"/>
+                        </Property>
+                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
+                          <Color blue="be" green="d2" red="d3" type="rgb"/>
+                        </Property>
+                        <Property name="text" type="java.lang.String" value="STERGE RAND ALES"/>
+                      </Properties>
+                      <Events>
+                        <EventHandler event="mouseClicked" listener="java.awt.event.MouseListener" parameters="java.awt.event.MouseEvent" handler="butonStergeRandMasinaMouseClicked"/>
+                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butonStergeRandMasinaActionPerformed"/>
+                      </Events>
+                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane1">
@@ -621,23 +635,47 @@
                   <SubComponents>
                     <Component class="javax.swing.JTable" name="tabelMasini">
                       <Properties>
+                        <Property name="autoCreateRowSorter" type="boolean" value="true"/>
                         <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="66" green="66" red="0" type="rgb"/>
+                        </Property>
+                        <Property name="border" type="javax.swing.border.Border" editor="org.netbeans.modules.form.editors2.BorderEditor">
+                          <Border info="org.netbeans.modules.form.compat2.border.BevelBorderInfo">
+                            <BevelBorder/>
+                          </Border>
                         </Property>
                         <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
                           <Color blue="c4" green="d6" red="d8" type="rgb"/>
                         </Property>
                         <Property name="model" type="javax.swing.table.TableModel" editor="org.netbeans.modules.form.editors2.TableModelEditor">
-                          <Table columnCount="9" rowCount="0">
-                            <Column editable="true" title="Marca" type="java.lang.Object"/>
-                            <Column editable="true" title="Model" type="java.lang.Object"/>
-                            <Column editable="true" title="Capacitate Cilindrica" type="java.lang.Object"/>
-                            <Column editable="true" title="An Fabricatie" type="java.lang.Object"/>
-                            <Column editable="true" title="Pret" type="java.lang.Object"/>
-                            <Column editable="true" title="Stare" type="java.lang.Object"/>
-                            <Column editable="true" title="Caroserie" type="java.lang.Object"/>
-                            <Column editable="true" title="Categorie Permis" type="java.lang.Object"/>
-                            <Column editable="true" title="Seria" type="java.lang.Object"/>
+                          <Table columnCount="9" rowCount="1">
+                            <Column editable="true" title="Marca" type="java.lang.Object">
+                              <Data value="Bmw"/>
+                            </Column>
+                            <Column editable="true" title="Model" type="java.lang.Object">
+                              <Data value="i8"/>
+                            </Column>
+                            <Column editable="true" title="Capacitate Cilindrica" type="java.lang.Object">
+                              <Data value="1599"/>
+                            </Column>
+                            <Column editable="true" title="An Fabricatie" type="java.lang.Object">
+                              <Data value="2016"/>
+                            </Column>
+                            <Column editable="true" title="Pret" type="java.lang.Object">
+                              <Data value="75000"/>
+                            </Column>
+                            <Column editable="true" title="Stare" type="java.lang.Object">
+                              <Data value="Fara Accidente"/>
+                            </Column>
+                            <Column editable="true" title="Caroserie" type="java.lang.Object">
+                              <Data value="Cabrio"/>
+                            </Column>
+                            <Column editable="true" title="Categorie Permis" type="java.lang.Object">
+                              <Data value="B"/>
+                            </Column>
+                            <Column editable="true" title="Seria" type="java.lang.Object">
+                              <Data value="WGBRNER124GG"/>
+                            </Column>
                           </Table>
                         </Property>
                         <Property name="columnModel" type="javax.swing.table.TableColumnModel" editor="org.netbeans.modules.form.editors2.TableColumnModelEditor">
@@ -663,27 +701,27 @@
                               <Renderer/>
                             </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title value="Pret"/>
+                              <Title/>
                               <Editor/>
                               <Renderer/>
                             </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title value="Stare"/>
+                              <Title/>
                               <Editor/>
                               <Renderer/>
                             </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title value="Caroserie"/>
+                              <Title/>
                               <Editor/>
                               <Renderer/>
                             </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title value="Categorie Permis"/>
+                              <Title/>
                               <Editor/>
                               <Renderer/>
                             </Column>
                             <Column maxWidth="-1" minWidth="-1" prefWidth="-1" resizable="true">
-                              <Title value="Seria"/>
+                              <Title/>
                               <Editor/>
                               <Renderer/>
                             </Column>
@@ -760,9 +798,9 @@
                                           <Component id="jLabel27" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel28" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel29" alignment="0" min="-2" max="-2" attributes="0"/>
-                                          <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel32" alignment="0" min="-2" max="-2" attributes="0"/>
                                           <Component id="jLabel33" alignment="0" min="-2" max="-2" attributes="0"/>
+                                          <Component id="jLabel30" alignment="0" min="-2" max="-2" attributes="0"/>
                                       </Group>
                                       <EmptySpace min="-2" pref="37" max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -776,10 +814,6 @@
                                           <Component id="categoriePermisCamion" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
                                       </Group>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="105" max="-2" attributes="0"/>
-                                      <Component id="butonSalvareCamion" min="-2" max="-2" attributes="0"/>
-                                  </Group>
                               </Group>
                               <EmptySpace pref="41" max="32767" attributes="0"/>
                               <Component id="jScrollPane2" min="-2" pref="633" max="-2" attributes="0"/>
@@ -788,6 +822,10 @@
                     </DimensionLayout>
                     <DimensionLayout dim="1">
                       <Group type="103" groupAlignment="0" attributes="0">
+                          <Group type="102" alignment="0" attributes="0">
+                              <Component id="jScrollPane2" max="32767" attributes="0"/>
+                              <EmptySpace max="-2" attributes="0"/>
+                          </Group>
                           <Group type="102" alignment="1" attributes="0">
                               <EmptySpace max="32767" attributes="0"/>
                               <Component id="Titlu2" min="-2" max="-2" attributes="0"/>
@@ -831,13 +869,7 @@
                                   <Component id="stareCamion" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel33" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="separate" max="-2" attributes="0"/>
-                              <Component id="butonSalvareCamion" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="70" max="-2" attributes="0"/>
-                          </Group>
-                          <Group type="102" alignment="0" attributes="0">
-                              <Component id="jScrollPane2" max="32767" attributes="0"/>
-                              <EmptySpace max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="116" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1049,23 +1081,6 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="butonSalvareCamion">
-                      <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
-                        </Property>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Times New Roman" size="18" style="0"/>
-                        </Property>
-                        <Property name="foreground" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="be" green="d2" red="d3" type="rgb"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="SALVEAZA"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butonSalvareCamionActionPerformed"/>
-                      </Events>
-                    </Component>
                     <Container class="javax.swing.JScrollPane" name="jScrollPane2">
                       <AuxValues>
                         <AuxValue name="autoScrollPane" type="java.lang.Boolean" value="true"/>
@@ -1229,10 +1244,6 @@
                                       <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
                                       <Component id="Titlu3" min="-2" max="-2" attributes="0"/>
                                   </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="104" max="-2" attributes="0"/>
-                                      <Component id="butonSalvareTractor" min="-2" max="-2" attributes="0"/>
-                                  </Group>
                               </Group>
                               <EmptySpace pref="35" max="32767" attributes="0"/>
                           </Group>
@@ -1278,9 +1289,7 @@
                                   <Component id="stareTractor" alignment="3" min="-2" max="-2" attributes="0"/>
                                   <Component id="jLabel39" alignment="3" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="butonSalvareTractor" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="121" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="161" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1468,20 +1477,6 @@
                         </Property>
                       </Properties>
                     </Component>
-                    <Component class="javax.swing.JButton" name="butonSalvareTractor">
-                      <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
-                        </Property>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="18" style="0"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="SALVEAZA"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butonSalvareTractorActionPerformed"/>
-                      </Events>
-                    </Component>
                   </SubComponents>
                 </Container>
                 <Container class="javax.swing.JScrollPane" name="jScrollPane3">
@@ -1613,6 +1608,10 @@
                       <Group type="103" groupAlignment="0" attributes="0">
                           <Group type="102" attributes="0">
                               <Group type="103" groupAlignment="0" attributes="0">
+                                  <Group type="102" attributes="0">
+                                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
+                                      <Component id="Titlu4" min="-2" max="-2" attributes="0"/>
+                                  </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <EmptySpace max="-2" attributes="0"/>
                                       <Group type="103" groupAlignment="0" attributes="0">
@@ -1636,14 +1635,6 @@
                                           <Component id="capacitateCilindricaMotocicleta" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
                                           <Component id="pretMotocicleta" alignment="0" min="-2" pref="149" max="-2" attributes="0"/>
                                       </Group>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="111" max="-2" attributes="0"/>
-                                      <Component id="Titlu4" min="-2" max="-2" attributes="0"/>
-                                  </Group>
-                                  <Group type="102" alignment="0" attributes="0">
-                                      <EmptySpace min="-2" pref="118" max="-2" attributes="0"/>
-                                      <Component id="butonSalvareMotocicleta" min="-2" max="-2" attributes="0"/>
                                   </Group>
                               </Group>
                               <EmptySpace pref="35" max="32767" attributes="0"/>
@@ -1699,9 +1690,7 @@
                                   </Group>
                                   <Component id="culoareMotocicleta" alignment="1" min="-2" max="-2" attributes="0"/>
                               </Group>
-                              <EmptySpace type="unrelated" max="-2" attributes="0"/>
-                              <Component id="butonSalvareMotocicleta" min="-2" max="-2" attributes="0"/>
-                              <EmptySpace min="-2" pref="79" max="-2" attributes="0"/>
+                              <EmptySpace min="-2" pref="119" max="-2" attributes="0"/>
                           </Group>
                       </Group>
                     </DimensionLayout>
@@ -1912,20 +1901,6 @@
                           <Color blue="0" green="0" red="0" type="rgb"/>
                         </Property>
                       </Properties>
-                    </Component>
-                    <Component class="javax.swing.JButton" name="butonSalvareMotocicleta">
-                      <Properties>
-                        <Property name="background" type="java.awt.Color" editor="org.netbeans.beaninfo.editors.ColorEditor">
-                          <Color blue="0" green="0" red="0" type="rgb"/>
-                        </Property>
-                        <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
-                          <Font name="Segoe UI" size="18" style="0"/>
-                        </Property>
-                        <Property name="text" type="java.lang.String" value="SALVEAZA"/>
-                      </Properties>
-                      <Events>
-                        <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="butonSalvareMotocicletaActionPerformed"/>
-                      </Events>
                     </Component>
                   </SubComponents>
                 </Container>
