@@ -261,16 +261,34 @@ public class SignUp extends javax.swing.JFrame {
     }//GEN-LAST:event_SignUpButton2MousePressed
 
     private void SignUpButton2ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton2ActionPerformed
-        // TODO add your handling code here:
-        SignUp SignUpFrame = new SignUp();
-        SignUpFrame.setVisible(true);
-        SignUpFrame.pack();
-        SignUpFrame.setLocationRelativeTo(null);
-        this.dispose();
+    // Obține datele introduse de utilizator
+    String fullName = fullNameSignUp.getText();
+    String email = emailSignUp.getText();
+    String password = new String(passwordSignUp.getPassword());
+
+    // Verifică dacă toate câmpurile sunt completate
+    if (fullName.isEmpty() || email.isEmpty() || password.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Toate câmpurile trebuie completate!", "Eroare", javax.swing.JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Salvare în fișier
+    try (java.io.FileWriter writer = new java.io.FileWriter("users.txt", true)) {
+        writer.write(fullName + "," + email + "," + password + "\n");
+        javax.swing.JOptionPane.showMessageDialog(this, "Contul a fost creat cu succes!", "Succes", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+
+        // După salvare, curăță câmpurile
+        fullNameSignUp.setText("");
+        emailSignUp.setText("");
+        passwordSignUp.setText("");
+    } catch (java.io.IOException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Eroare la salvarea datelor!", "Eroare", javax.swing.JOptionPane.ERROR_MESSAGE);
+    
     }//GEN-LAST:event_SignUpButton2ActionPerformed
 
     private void emailSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailSignUpActionPerformed
         // TODO add your handling code here:
+        //nimic
     }//GEN-LAST:event_emailSignUpActionPerformed
 
     /**
