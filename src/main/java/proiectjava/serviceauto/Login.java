@@ -231,6 +231,11 @@ public class Login extends javax.swing.JFrame {
 
     private void SignUpButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_SignUpButton1ActionPerformed
         // TODO add your handling code here:
+        SignUp SignUpFrame = new SignUp();
+        SignUpFrame.setVisible(true);
+        SignUpFrame.pack();
+        SignUpFrame.setLocationRelativeTo(null);
+        this.dispose();
     }//GEN-LAST:event_SignUpButton1ActionPerformed
 
     private void SignUpButton1MousePressed(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_SignUpButton1MousePressed
@@ -242,12 +247,50 @@ public class Login extends javax.swing.JFrame {
     }//GEN-LAST:event_LoginButton1MousePressed
 
     private void LoginButton1ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_LoginButton1ActionPerformed
-        // TODO add your handling code here:
+    // Obține datele introduse de utilizator
+    String email = emailLogin.getText();
+    String password = new String(passwordLogin.getPassword());
+
+    // Verifică dacă toate câmpurile sunt completate
+    if (email.isEmpty() || password.isEmpty()) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Toate câmpurile trebuie completate!", "Eroare", javax.swing.JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Verifică dacă datele există în fișier
+    boolean isAuthenticated = false;
+
+    try (java.io.BufferedReader reader = new java.io.BufferedReader(new java.io.FileReader("users.txt"))) {
+        String line;
+        while ((line = reader.readLine()) != null) {
+            String[] userData = line.split(",");
+            if (userData.length == 3) {
+                String savedEmail = userData[1];
+                String savedPassword = userData[2];
+                if (email.equals(savedEmail) && password.equals(savedPassword)) {
+                    isAuthenticated = true;
+                    break;
+                }
+            }
+        }
+    } catch (java.io.IOException e) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Eroare la citirea datelor!", "Eroare", javax.swing.JOptionPane.ERROR_MESSAGE);
+        return;
+    }
+
+    // Afișează mesaj în funcție de rezultat
+    if (isAuthenticated) {
+        javax.swing.JOptionPane.showMessageDialog(this, "Autentificare reușită!", "Succes", javax.swing.JOptionPane.INFORMATION_MESSAGE);
+        
+        // Redirecționează utilizatorul către pagina principală
         HomePage HomeFrame = new HomePage();
         HomeFrame.setVisible(true);
         HomeFrame.pack();
         HomeFrame.setLocationRelativeTo(null);
         this.dispose();
+    } else {
+        javax.swing.JOptionPane.showMessageDialog(this, "Email sau parolă incorecte!", "Eroare", javax.swing.JOptionPane.ERROR_MESSAGE);
+    }
     }//GEN-LAST:event_LoginButton1ActionPerformed
 
     private void emailLoginActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailLoginActionPerformed
