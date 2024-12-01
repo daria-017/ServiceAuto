@@ -36,13 +36,13 @@ public class SignUp extends javax.swing.JFrame {
         titlu = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
         jLabel3 = new javax.swing.JLabel();
-        emailSignUp = new javax.swing.JTextField();
         passwordSignUp = new javax.swing.JPasswordField();
         LoginButton2 = new javax.swing.JButton();
         jLabel4 = new javax.swing.JLabel();
         SignUpButton2 = new javax.swing.JButton();
         jLabel6 = new javax.swing.JLabel();
         fullNameSignUp = new javax.swing.JTextField();
+        emailSignUp = new javax.swing.JTextField();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
         setTitle("LOGIN");
@@ -113,14 +113,6 @@ public class SignUp extends javax.swing.JFrame {
         jLabel3.setForeground(new java.awt.Color(0, 0, 0));
         jLabel3.setText("Email");
 
-        emailSignUp.setBackground(new java.awt.Color(216, 214, 196));
-        emailSignUp.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
-        emailSignUp.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                emailSignUpActionPerformed(evt);
-            }
-        });
-
         passwordSignUp.setBackground(new java.awt.Color(216, 214, 196));
 
         LoginButton2.setBackground(new java.awt.Color(216, 214, 196));
@@ -167,6 +159,9 @@ public class SignUp extends javax.swing.JFrame {
         fullNameSignUp.setBackground(new java.awt.Color(216, 214, 196));
         fullNameSignUp.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
 
+        emailSignUp.setBackground(new java.awt.Color(216, 214, 196));
+        emailSignUp.setFont(new java.awt.Font("Segoe UI", 0, 16)); // NOI18N
+
         javax.swing.GroupLayout LeftLayout = new javax.swing.GroupLayout(Left);
         Left.setLayout(LeftLayout);
         LeftLayout.setHorizontalGroup(
@@ -180,14 +175,14 @@ public class SignUp extends javax.swing.JFrame {
                             .addGroup(LeftLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                                 .addComponent(jLabel2)
                                 .addComponent(jLabel3)
-                                .addComponent(emailSignUp, javax.swing.GroupLayout.DEFAULT_SIZE, 325, Short.MAX_VALUE)
                                 .addComponent(passwordSignUp)
                                 .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, LeftLayout.createSequentialGroup()
                                     .addComponent(jLabel4)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
                                     .addComponent(LoginButton2, javax.swing.GroupLayout.PREFERRED_SIZE, 90, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addGap(57, 57, 57))
-                                .addComponent(fullNameSignUp, javax.swing.GroupLayout.DEFAULT_SIZE, 325, Short.MAX_VALUE))))
+                                .addComponent(fullNameSignUp, javax.swing.GroupLayout.DEFAULT_SIZE, 325, Short.MAX_VALUE)
+                                .addComponent(emailSignUp, javax.swing.GroupLayout.DEFAULT_SIZE, 325, Short.MAX_VALUE))))
                     .addGroup(LeftLayout.createSequentialGroup()
                         .addGap(126, 126, 126)
                         .addComponent(titlu))
@@ -285,11 +280,6 @@ public class SignUp extends javax.swing.JFrame {
         javax.swing.JOptionPane.showMessageDialog(this, "Eroare la salvarea datelor!", "Eroare", javax.swing.JOptionPane.ERROR_MESSAGE);
     
     }//GEN-LAST:event_SignUpButton2ActionPerformed
-
-    private void emailSignUpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_emailSignUpActionPerformed
-        // TODO add your handling code here:
-        //nimic
-    }//GEN-LAST:event_emailSignUpActionPerformed
 
     /**
      * @param args the command line arguments
