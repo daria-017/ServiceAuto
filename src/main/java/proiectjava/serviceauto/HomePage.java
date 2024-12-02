@@ -1186,4 +1186,4 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JTable tabelMotociclete;
     private javax.swing.JTable tabelTractoare;
     // End of variables declaration//GEN-END:variables
-
+}
