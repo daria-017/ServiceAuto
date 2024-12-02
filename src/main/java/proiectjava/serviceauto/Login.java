@@ -1,5 +1,7 @@
 package proiectjava.serviceauto;
 
+import javax.swing.ImageIcon;
+
 
 
 /*
@@ -14,6 +16,7 @@ package proiectjava.serviceauto;
  */
 public class Login extends javax.swing.JFrame {
 
+    ImageIcon logo200x = new ImageIcon("logo200x.png");
     /**
      * Creates new form Login
      */
@@ -32,8 +35,8 @@ public class Login extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         Right = new javax.swing.JPanel();
-        logoLogin = new javax.swing.JLabel();
         copyrightLogin = new javax.swing.JLabel();
+        jLabel5 = new javax.swing.JLabel();
         Left = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -54,43 +57,37 @@ public class Login extends javax.swing.JFrame {
         Right.setBackground(new java.awt.Color(0, 102, 102));
         Right.setPreferredSize(new java.awt.Dimension(400, 500));
 
-        logoLogin.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logoLogin.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proiectjava/serviceauto/Dealership_logo_200px.png"))); // NOI18N
-        logoLogin.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        logoLogin.setMaximumSize(new java.awt.Dimension(100, 100));
-        logoLogin.setMinimumSize(new java.awt.Dimension(100, 100));
-        logoLogin.setPreferredSize(new java.awt.Dimension(100, 100));
-
         copyrightLogin.setBackground(new java.awt.Color(0, 102, 102));
         copyrightLogin.setForeground(new java.awt.Color(216, 214, 196));
         copyrightLogin.setText("copyright © Dealership. All rights reserved.");
         copyrightLogin.setOpaque(true);
+
+        jLabel5.setText("jLabel5");
 
         javax.swing.GroupLayout RightLayout = new javax.swing.GroupLayout(Right);
         Right.setLayout(RightLayout);
         RightLayout.setHorizontalGroup(
             RightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RightLayout.createSequentialGroup()
-                .addGroup(RightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(RightLayout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addComponent(logoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(RightLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(copyrightLogin)))
-                .addContainerGap(108, Short.MAX_VALUE))
+                .addContainerGap()
+                .addComponent(copyrightLogin)
+                .addContainerGap(javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE))
+            .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, RightLayout.createSequentialGroup()
+                .addContainerGap(102, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(98, 98, 98))
         );
         RightLayout.setVerticalGroup(
             RightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RightLayout.createSequentialGroup()
-                .addGap(126, 126, 126)
-                .addComponent(logoLogin, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
+                .addContainerGap(157, Short.MAX_VALUE)
+                .addComponent(jLabel5, javax.swing.GroupLayout.PREFERRED_SIZE, 180, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addGap(141, 141, 141)
                 .addComponent(copyrightLogin)
                 .addContainerGap())
         );
 
-        logoLogin.getAccessibleContext().setAccessibleName("Logo");
+        jLabel5.setIcon(logo200x);
 
         jPanel1.add(Right);
         Right.setBounds(0, 0, 400, 500);
@@ -344,8 +341,8 @@ public class Login extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
+    private javax.swing.JLabel jLabel5;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel logoLogin;
     private javax.swing.JPasswordField passwordLogin;
     // End of variables declaration//GEN-END:variables
 }
