@@ -1,4 +1,5 @@
 package proiectjava.serviceauto;
+import javax.swing.ImageIcon;
 
 
 
@@ -9,6 +10,7 @@ package proiectjava.serviceauto;
  */
 public class SignUp extends javax.swing.JFrame {
 
+    ImageIcon logo200x = new ImageIcon("logo200x.png");
     /**
      * Creates new form Login
      */
@@ -27,8 +29,8 @@ public class SignUp extends javax.swing.JFrame {
 
         jPanel1 = new javax.swing.JPanel();
         Right = new javax.swing.JPanel();
-        logo = new javax.swing.JLabel();
         copyright = new javax.swing.JLabel();
+        jLabel1 = new javax.swing.JLabel();
         Left = new javax.swing.JPanel();
         titlu = new javax.swing.JLabel();
         jLabel2 = new javax.swing.JLabel();
@@ -51,17 +53,12 @@ public class SignUp extends javax.swing.JFrame {
         Right.setBackground(new java.awt.Color(0, 102, 102));
         Right.setPreferredSize(new java.awt.Dimension(400, 500));
 
-        logo.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        logo.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proiectjava/serviceauto/Dealership_logo_200px.png"))); // NOI18N
-        logo.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        logo.setMaximumSize(new java.awt.Dimension(100, 100));
-        logo.setMinimumSize(new java.awt.Dimension(100, 100));
-        logo.setPreferredSize(new java.awt.Dimension(100, 100));
-
         copyright.setBackground(new java.awt.Color(0, 102, 102));
         copyright.setForeground(new java.awt.Color(216, 214, 196));
         copyright.setText("copyright © Dealership. All rights reserved.");
         copyright.setOpaque(true);
+
+        jLabel1.setText("jLabel1");
 
         javax.swing.GroupLayout RightLayout = new javax.swing.GroupLayout(Right);
         Right.setLayout(RightLayout);
@@ -70,24 +67,24 @@ public class SignUp extends javax.swing.JFrame {
             .addGroup(RightLayout.createSequentialGroup()
                 .addGroup(RightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(RightLayout.createSequentialGroup()
-                        .addGap(92, 92, 92)
-                        .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE))
-                    .addGroup(RightLayout.createSequentialGroup()
                         .addContainerGap()
-                        .addComponent(copyright)))
-                .addContainerGap(108, Short.MAX_VALUE))
+                        .addComponent(copyright))
+                    .addGroup(RightLayout.createSequentialGroup()
+                        .addGap(94, 94, 94)
+                        .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addContainerGap(106, Short.MAX_VALUE))
         );
         RightLayout.setVerticalGroup(
             RightLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(RightLayout.createSequentialGroup()
                 .addGap(126, 126, 126)
-                .addComponent(logo, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
+                .addComponent(jLabel1, javax.swing.GroupLayout.PREFERRED_SIZE, 200, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 152, Short.MAX_VALUE)
                 .addComponent(copyright)
                 .addContainerGap())
         );
 
-        logo.getAccessibleContext().setAccessibleName("Logo");
+        jLabel1.setIcon(logo200x);
 
         jPanel1.add(Right);
         Right.setBounds(0, 0, 400, 500);
@@ -325,12 +322,12 @@ public class SignUp extends javax.swing.JFrame {
     private javax.swing.JLabel copyright;
     private javax.swing.JTextField emailSignUp;
     private javax.swing.JTextField fullNameSignUp;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel logo;
     private javax.swing.JPasswordField passwordSignUp;
     private javax.swing.JLabel titlu;
     // End of variables declaration//GEN-END:variables

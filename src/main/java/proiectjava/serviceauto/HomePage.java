@@ -1,8 +1,8 @@
 
 package proiectjava.serviceauto;
+import javax.swing.ImageIcon;
 import javax.swing.JOptionPane;
 import javax.swing.table.DefaultTableModel;
-
 
 /**
  *
@@ -10,6 +10,7 @@ import javax.swing.table.DefaultTableModel;
  */
 public class HomePage extends javax.swing.JFrame {
 
+    ImageIcon logo100x = new ImageIcon("logo100x.png");
     /**
      * Creates new form HomePage
      */
@@ -28,7 +29,6 @@ public class HomePage extends javax.swing.JFrame {
 
         mainPage = new javax.swing.JPanel();
         logoutButton = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
         separator = new javax.swing.JSeparator();
         jTabbedPane1 = new javax.swing.JTabbedPane();
         aboutUs = new javax.swing.JPanel();
@@ -120,6 +120,7 @@ public class HomePage extends javax.swing.JFrame {
         jScrollPane4 = new javax.swing.JScrollPane();
         tabelMotociclete = new javax.swing.JTable();
         jLabel2 = new javax.swing.JLabel();
+        jLabel3 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
 
@@ -135,8 +136,6 @@ public class HomePage extends javax.swing.JFrame {
                 logoutButtonActionPerformed(evt);
             }
         });
-
-        jLabel1.setIcon(new javax.swing.ImageIcon(getClass().getResource("/proiectjava/serviceauto/Dealership_logo_100px.png"))); // NOI18N
 
         jTabbedPane1.setBackground(new java.awt.Color(0, 102, 102));
         jTabbedPane1.setForeground(new java.awt.Color(216, 214, 196));
@@ -954,18 +953,17 @@ public class HomePage extends javax.swing.JFrame {
         jLabel2.setForeground(new java.awt.Color(0, 0, 0));
         jLabel2.setText("Bun venit!");
 
+        jLabel3.setText("jLabel3");
+
         javax.swing.GroupLayout mainPageLayout = new javax.swing.GroupLayout(mainPage);
         mainPage.setLayout(mainPageLayout);
         mainPageLayout.setHorizontalGroup(
             mainPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(mainPageLayout.createSequentialGroup()
+                .addGap(15, 15, 15)
                 .addGroup(mainPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-                    .addGroup(mainPageLayout.createSequentialGroup()
-                        .addContainerGap()
-                        .addComponent(jLabel1))
-                    .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, mainPageLayout.createSequentialGroup()
-                        .addGap(15, 15, 15)
-                        .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                    .addComponent(jLabel2, javax.swing.GroupLayout.PREFERRED_SIZE, 91, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                 .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 98, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addGap(23, 23, 23))
@@ -980,19 +978,21 @@ public class HomePage extends javax.swing.JFrame {
             .addGroup(mainPageLayout.createSequentialGroup()
                 .addGroup(mainPageLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(mainPageLayout.createSequentialGroup()
+                        .addGap(14, 14, 14)
+                        .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE))
+                    .addGroup(mainPageLayout.createSequentialGroup()
                         .addGap(18, 18, 18)
                         .addComponent(jLabel2)
-                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.UNRELATED)
-                        .addComponent(jLabel1))
-                    .addGroup(mainPageLayout.createSequentialGroup()
-                        .addGap(14, 14, 14)
-                        .addComponent(logoutButton, javax.swing.GroupLayout.PREFERRED_SIZE, 44, javax.swing.GroupLayout.PREFERRED_SIZE)))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
+                        .addComponent(jLabel3, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)))
+                .addGap(12, 12, 12)
                 .addComponent(separator, javax.swing.GroupLayout.PREFERRED_SIZE, 13, javax.swing.GroupLayout.PREFERRED_SIZE)
                 .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED)
                 .addComponent(jTabbedPane1, javax.swing.GroupLayout.PREFERRED_SIZE, 479, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addContainerGap(18, Short.MAX_VALUE))
+                .addContainerGap(148, Short.MAX_VALUE))
         );
+
+        jLabel3.setIcon(logo100x);
 
         javax.swing.GroupLayout layout = new javax.swing.GroupLayout(getContentPane());
         getContentPane().setLayout(layout);
@@ -1117,7 +1117,6 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JTextField categoriePermisMasina;
     private javax.swing.JTextField culoareMotocicleta;
     private javax.swing.JTextField greutateTractor;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel12;
     private javax.swing.JLabel jLabel17;
     private javax.swing.JLabel jLabel18;
@@ -1133,6 +1132,7 @@ public class HomePage extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel27;
     private javax.swing.JLabel jLabel28;
     private javax.swing.JLabel jLabel29;
+    private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel30;
     private javax.swing.JLabel jLabel32;
     private javax.swing.JLabel jLabel33;
